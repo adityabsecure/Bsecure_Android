@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#99000000"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/tvProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bt_readonly"
+            android:layout_alignTop="@+id/bt_readonly"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/v_midline"
+            android:layout_toStartOf="@+id/v_midline"
+            android:gravity="center_vertical"
+            android:text="@string/readonly"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/v_midline"
+            android:layout_width="2dp"
+            android:layout_height="2dp"
+            android:layout_centerHorizontal="true" />
+
+        <com.mail.bsecure.controls.ButtonsToggle
+            android:id="@+id/bt_readonly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" >
+        </com.mail.bsecure.controls.ButtonsToggle>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bt_replay"
+            android:layout_alignTop="@+id/bt_replay"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/v_midline"
+            android:layout_toStartOf="@+id/v_midline"
+            android:gravity="center_vertical"
+            android:text="@string/reply"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <com.mail.bsecure.controls.ButtonsToggle
+            android:id="@+id/bt_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bt_readonly"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" >
+        </com.mail.bsecure.controls.ButtonsToggle>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bt_autodelete"
+            android:layout_alignTop="@+id/bt_autodelete"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/v_midline"
+            android:layout_toStartOf="@+id/v_midline"
+            android:gravity="center_vertical"
+            android:text="@string/autodelete"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <com.mail.bsecure.controls.ButtonsToggle
+            android:id="@+id/bt_autodelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bt_replay"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp" >
+        </com.mail.bsecure.controls.ButtonsToggle>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_pin"
+            android:layout_alignTop="@+id/et_pin"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/v_midline"
+            android:layout_toStartOf="@+id/v_midline"
+            android:gravity="center_vertical"
+            android:text="@string/pin"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/bt_autodelete"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/v_midline"
+            android:layout_toRightOf="@+id/v_midline"
+            android:drawSelectorOnTop="true"
+            android:drawableEnd="@drawable/pen_icon"
+            android:drawableRight="@drawable/pen_icon"
+            android:ems="10"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/sp_showtime"
+            android:layout_alignTop="@+id/sp_showtime"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/v_midline"
+            android:layout_toStartOf="@+id/v_midline"
+            android:gravity="center_vertical"
+            android:text="@string/showtime"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/sp_showtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/et_pin"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/v_midline"
+            android:layout_toRightOf="@+id/v_midline"
+            android:drawSelectorOnTop="true"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/et_validuntil"
+            android:layout_alignTop="@+id/et_validuntil"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/v_midline"
+            android:layout_toStartOf="@+id/v_midline"
+            android:gravity="center_vertical"
+            android:text="@string/validuntil"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_validuntil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sp_showtime"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/v_midline"
+            android:layout_toRightOf="@+id/v_midline"
+            android:drawSelectorOnTop="true"
+            android:drawableEnd="@drawable/pen_icon"
+            android:drawableRight="@drawable/pen_icon"            
+            android:ems="10"
+            android:inputType="text"
+            android:enabled="false"
+            android:editable="false"
+            android:padding="5dp" />
+        
+        <ImageView
+            android:id="@+id/et_validuntil_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/sp_showtime"
+            android:layout_gravity="end"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"  
+            android:contentDescription="@string/app_name"          
+            android:src="@drawable/pen_icon"            
+            android:padding="5dp" />
+        
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_filterdone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/template_bt_red_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/done"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

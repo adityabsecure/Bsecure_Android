@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/cmts_bg"
+    android:orientation="horizontal" >
+
+    <com.mail.bsecure.controls.ProgressControl
+        android:id="@+id/download_progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1" >
+    </com.mail.bsecure.controls.ProgressControl>
+
+    <TextView
+        android:id="@+id/tv_attachmentAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:textColor="@color/bs_dark_blue"
+        android:text="@string/remove"
+        android:textStyle="bold" >
+    </TextView>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"        
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bsecure_logo" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"        
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_bg" >
+
+        <EditText
+            android:id="@+id/account_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/cmts_bg"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.1234567890"         
+            android:hint="@string/uname"
+            android:maxLength="64"
+            android:padding="10dp"            
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_recovery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/template_bt_red_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/recoverpin"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    tools:context=".GLO" >
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="@string/search"
+        appcompat:actionViewClass="android.support.v7.widget.SearchView"
+        appcompat:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/cm_delete"
+        android:icon="@drawable/ic_action_discard"
+        android:showAsAction="always"
+        android:title="@string/send"
+        yourapp:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/cm_delete_done"
+        android:icon="@drawable/ic_action_cancel"
+        android:showAsAction="always"
+        android:visible="false"
+        android:title="@string/send"
+        yourapp:showAsAction="always"/>
+    
+    <item
+        android:id="@+id/cm_undo"
+        android:icon="@drawable/ic_action_undo"
+        android:visible="false"
+        android:showAsAction="always"
+        android:title="@string/send"
+        yourapp:showAsAction="always"/>
+
+</menu>

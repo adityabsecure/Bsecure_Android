@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"        
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bsecure_logo" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_bg" >
+
+        <EditText
+            android:id="@+id/account_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:background="@drawable/cmts_bg"            
+            android:drawableLeft="@drawable/ic_action_person"
+            android:drawableStart="@drawable/ic_action_person"
+            android:drawablePadding="10dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.1234567890"
+            android:hint="@string/uname"
+            android:maxLength="64"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray" />        
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_txt"
+            android:background="@drawable/cmts_bg"
+            android:drawableLeft="@drawable/ic_action_secure"
+            android:drawableStart="@drawable/ic_action_secure"
+            android:drawablePadding="10dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="16"            
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray" />
+
+        <TextView
+            android:id="@+id/forgotPswd"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"            
+            android:padding="15dp"            
+            android:text="@string/forgotPassword"
+            android:textColor="@color/bs_blue" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/login_lgn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forgotPswd"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/template_bt_red_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/signin"
+            android:textColor="@android:color/white" />
+        
+        <TextView
+            android:id="@+id/register_lgn"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_lgn"           
+            android:padding="15dp"            
+            android:text="@string/createnewaccount"
+            android:textColor="@color/bs_blue" >
+        </TextView>
+        
+        <TextView
+            android:id="@+id/smiwpwas"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_lgn"           
+            android:padding="15dp"            
+            android:text="@string/smiwpwas"
+            android:textColor="@color/bs_blue"
+            android:visibility="invisible" >
+        </TextView>
+        
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/bsecure_logo" >
+    </ImageView>
+    
+    <TextView
+            android:id="@+id/tv_addPin_txt"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"            
+            android:padding="10dp"     
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/addpin_caps"                       
+            android:textColor="@color/bs_dark_blue" >
+        </TextView>
+        
+    <LinearLayout
+        android:id="@+id/innerLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_addPin_txt"        
+        android:layout_margin="10dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/ed_pwd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/cmts_bg"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/ed_pwd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/cmts_bg"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/ed_pwd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/cmts_bg"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <EditText
+            android:id="@+id/ed_pwd4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/cmts_bg"
+            android:digits="1234567890"
+            android:gravity="center"
+            android:inputType="numberPassword"
+            android:maxLength="1"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/innerLayout1"
+        android:layout_margin="10dp"
+        android:background="@drawable/transparent_bg" >
+
+        <!-- <EditText
+            android:id="@+id/account_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"            
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_."
+            android:hint="@string/uname"
+            android:maxLength="32"
+            android:enabled="false"                       
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:background="@drawable/cmts_bg"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+        
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_txt"
+            android:layout_marginBottom="10dp"            
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="8"
+            android:background="@drawable/cmts_bg"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" /> -->
+
+        <EditText
+            android:id="@+id/et_pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/password"
+            android:background="@drawable/cmts_bg"
+            android:hint="@string/pin"
+            android:inputType="numberPassword"
+            android:maxLength="4"
+            android:layout_marginBottom="10dp"            
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" />
+
+        <TextView
+            android:id="@+id/tv_addPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_pin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/template_bt_red_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/addpin"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base" />
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat">
+
+        <!-- colorPrimary is used for the default action bar background -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textGray</item>
+        <item name="android:textColorSecondary">@color/colorPrimary</item>
+    </style>
+    
+    <!-- <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">    
+        <item name="queryBackground">@drawable/abc_textfield_search_material</item>
+        <item name="submitBackground">@drawable/abc_textfield_search_material</item>       
+    </style> -->
+
+    <style name="DialogTheme" parent="Theme.AppCompat">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="MyActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="background">@color/colorPrimary</item>
+
+        <!--
+        <item name="icon">@drawable/ic_launcher</item>
+        <item name="android:icon">@drawable/ic_launcher</item>
+        -->
+    </style>
+
+</resources>

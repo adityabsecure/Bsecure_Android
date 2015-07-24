@@ -1,0 +1,90 @@
+
+registration = https://bsecure.email/development25/registration/userregistration?firstname=(FNAME)&lastname=(LNAME)&email=(EMAIL)&password=(PWD)&city=(CITY)
+
+addPin = http://bsecure.email/development25/registration/addpin?email=(EMAIL)&password=(PWD)&pin=(PIN)
+
+login = http://bsecure.email/development25/login/userlogin?email=(EMAIL)&password=(PWD)
+
+pinLogin = http://bsecure.email/development25/login/pinlogin?pin=(PIN)&&emailid=(EMAIL)
+
+pwdrecover = http://bsecure.email/development25/recovery/recoverpassword?email=(EMAIL)
+
+pinRecover = http://bsecure.email/development25/recovery/forgotpin?email=(EMAIL)&pin=(PIN)
+
+ispin = http://bsecure.email/development25/recovery/recoverpin?email=(EMAIL)
+
+getmaillist = http://bsecure.email/development25/inbox/inboxdetails?email=(EMAIL)
+
+getsentmaillist = http://bsecure.email/development25/inbox/sentmaildetails?email=(EMAIL)
+
+getdraftmaillist = http://bsecure.email/development25/drafts/draftsdetails?email=(EMAIL)
+
+gettrashmaillist = http://bsecure.email/development25/trash/trashdetails?email=(EMAIL)
+
+opendraftmail = http://bsecure.email/development25/drafts/draftsmsg?draftid=(DID)
+
+#compose_v_m_p = http://bsecure.email/development25/message/composeviewmessage?composeid=(COMID)&memberid=(MID)&sessionid=(SID)
+compose_v_m_p = http://bsecure.email/development25/message/composeviewmessage?composeid=(COMID)&memberid=(MID)
+
+#re_compose_v_m_p = http://bsecure.email/development25/message/recomposeviewmessage?reid=(REID)&composeid=(COMID)&sessionid=(SID)
+re_compose_v_m_p = http://bsecure.email/development25/message/recomposeviewmessage?reid=(REID)&composeid=(COMID)
+
+#sub_compose_v_m_p = http://bsecure.email/development25/message/subcomposeviewmessage?subid=(SUBID)&composeid=(COMID)&sessionid=(SID)
+sub_compose_v_m_p = http://bsecure.email/development25/message/subcomposeviewmessage?subid=(SUBID)&composeid=(COMID)
+
+repy_v_m_p = http://bsecure.email/development25/inbox/replyviewmessage?rid=(RID)
+
+#mailpin = http://bsecure.email/development25/pin/composevalidation?composeid=(COMID)&memberid=(MID)&sessionid=(SID)&pin=(PIN)
+
+mailpin = http://bsecure.email/development25/pin/composevalidation?composeid=(COMID)&memberid=(MID)&pin=(PIN)
+
+re_mailpin = http://bsecure.email/development25/pin/recomposevalidation?composeid=(COMID)&reid=(RID)&pin=(PIN)
+
+sub_mailpin = http://bsecure.email/development25/pin/subcomposevalidation?composeid=(COMID)&subid=(SUBID)&pin=(PIN)
+
+compose_mail = https://bsecure.email/development25/compose/composemsg/
+
+#inboxTotrash = http://bsecure.email/development25/inbox/inboxtotrash?composeid=(COMID)&email=(EMAIL)
+
+inboxTotrash = http://bsecure.email/development25/inbox/inboxtotrash?email=(EMAIL)
+
+#sentTotrash = http://bsecure.email/development25/inbox/inboxtotrash?composeid=(COMID)&email=(EMAIL)
+sentTotrash = http://bsecure.email/development25/inbox/inboxtotrash?email=(EMAIL)
+
+#draftsTotrash  = http://bsecure.email/development25/drafts/draftstotrash?draftid=(COMID)&email=(EMAIL)
+draftsTotrash = http://bsecure.email/development25/drafts/draftstotrash?email=(EMAIL)
+
+#removeMailFromTrash = http://bsecure.email/development25/trash/removetrash?composeid=(COMID)
+removeMailFromTrash = http://bsecure.email/development25/trash/removetrash
+
+# moveMailFromTrash = http://bsecure.email/development25/trash/trashtoinbox?trashid=(TID)
+moveMailFromTrash = http://bsecure.email/development25/trash/trashtoinbox
+
+reply_receiver = http://bsecure.email/development25/reply/receiverreply?composeid=(COMID)&to=(TO)&from=(FROM)&msg=(MSG)
+
+#getmaillist = http://bsecure.email/development25/login/userlogin?email=(EMAIL)&password=(PWD)
+
+searchInInbox = http://bsecure.email/development25/inbox/searchinboxdetails?email=(EMAIL)&searchemail=(SEMAIL)
+
+searchInSent = http://bsecure.email/development25/inbox/searchsentmaildetails?email=(EMAIL)&searchemail=(SEMAIL)
+
+searchInDraft = http://bsecure.email/development25/drafts/searchdraftsdetails?email=(EMAIL)&searchemail=(SEMAIL)
+
+searchInTrash = http://bsecure.email/development25/trash/searchtrashdetails?email=(EMAIL)&searchemail=(SEMAIL)
+
+searchContacts = http://bsecure.email/development25/inbox/searchcontacts?email=(EMAIL)&searchdata=(KEY)
+
+unsubUser = http://bsecure.email/development25/unsubscribe/unsubscribeuser?email=(EMAIL)&unsubscribeemail=(UNEMAIL)
+
+unblockUser = http://bsecure.email/development25/unsubscribe/unblock?email=(EMAIL)&unblockemail=(UNEMAIL)
+
+savedrafts = http://bsecure.email/development25/drafts/savetodraft
+
+sentview_compose = http://bsecure.email/development25/message/sentcomposeviewmessage?composeid=(COMID)&memberid=(MID)
+
+sentview_recompose = http://bsecure.email/development25/message/sentrecomposeviewmessage?reid=(REID)&composeid=(COMID)
+
+sentview_subcompose = http://bsecure.email/development25/message/sentsubcomposeviewmessage?subid=(SUBID)&composeid=(COMID)
+
+#sharmastech@gmail.com
+#deep1234

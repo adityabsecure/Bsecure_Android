@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categories_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/tv_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textColor="@color/bs_blue"
+        android:textStyle="bold"
+        android:visibility="gone" >
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/tv_toText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ed_toText"
+            android:layout_alignTop="@+id/ed_toText"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/to"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed_toText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/tv_toText"
+            android:layout_toLeftOf="@+id/tv_ccText"
+            android:layout_toRightOf="@+id/tv_toText"
+            android:layout_toStartOf="@+id/tv_ccText"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.1234567890,"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:textColor="@color/black" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_ccText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ed_toText"
+            android:layout_alignTop="@+id/ed_toText"
+            android:layout_toLeftOf="@+id/tv_bccText"
+            android:layout_toStartOf="@+id/tv_bccText"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/cc"
+            android:textColor="@color/bs_blue" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_bccText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/ed_toText"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/ed_toText"
+            android:gravity="center_vertical|start"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/bcc"
+            android:textColor="@color/bs_blue" >
+        </TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_cc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_topborder"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/cc"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed_ccText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.1234567890,"
+            android:padding="10dp"
+            android:textColor="@color/black" >
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_topborder"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|start"
+            android:padding="5dp"
+            android:text="@string/bcc"
+            android:textColor="@color/black" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/ed_bccText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.1234567890,"
+            android:padding="10dp"
+            android:textColor="@color/black" >
+        </EditText>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/ed_subText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_bg_topbottomborder"
+        android:hint="@string/subject"
+        android:inputType="textEmailSubject"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray" >
+    </EditText>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+         >
+
+        <EditText
+            android:id="@+id/ed_comText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tv_addattachment"
+            android:background="@drawable/layout_bg_bottomborder"
+            android:gravity="top|start"
+            android:hint="@string/composeemail"
+            android:inputType="textMultiLine"
+            android:padding="10dp"            
+            android:textColor="@color/black"
+            android:textColorHint="@color/gray" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_addattachment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_attachments_layout"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|start"
+            android:padding="10dp"
+            android:text="@string/addattachments"
+            android:textColor="@color/bs_dark_blue"
+            android:visibility="gone"
+            android:textStyle="bold" >
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/ll_attachments_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:padding="10dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:background="@color/white"
+            android:focusable="false"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@color/bs_blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/cmttxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txt"
+            android:layout_alignLeft="@+id/txt"
+            android:layout_alignRight="@+id/txt"
+            android:layout_alignStart="@+id/txt"
+            android:layout_below="@+id/txt"
+            android:layout_margin="10dp"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@-_.1234567890"
+            android:gravity="top"
+            android:hint="@string/uname"
+            android:inputType="text"
+            android:maxLength="64"
+            android:padding="10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@color/gray" />
+
+        <requestFocus />
+
+        <Button
+            android:id="@+id/bn_bu_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/cmttxt"
+            android:layout_alignStart="@+id/cmttxt"
+            android:layout_below="@+id/cmttxt"
+            android:layout_margin="0.5dp"
+            android:background="@drawable/template_bt_red_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/cancel_btn"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/bn_bu_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/cmttxt"
+            android:layout_alignRight="@+id/cmttxt"
+            android:layout_below="@+id/cmttxt"
+            android:background="@drawable/template_bt_red_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/submit"
+            android:textAppearance="@android:style/TextAppearance.Small"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,248 @@
+package com.airtel.musicbox.database;
+
+import java.util.Vector;
+
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+
+import com.airtel.musicbox.common.Item;
+
+public class Download_Table {
+	private Database database = null;
+	Vector<Item> values = new Vector<Item>();
+
+	public Download_Table(Context context) {
+		database = new Database(context);
+	}
+
+
+	/**
+	 * getInstalledApp - This method will return a record based on 'CID' in the
+	 * form of Item .
+	 * 
+	 * @param String
+	 * @return Vector<Item>
+	 */
+	public Vector<Item> getDownloadTracks() {
+		Vector<Item> items = new Vector<Item>();
+		try {
+			if (database != null) {
+				SQLiteDatabase db = database.getWritableDatabase();
+
+				Cursor cursor = db
+						.rawQuery(
+								"SELECT * FROM TRACKS WHERE imagetype='A' AND albumid=''",
+								null);
+				if (cursor.moveToFirst()) {
+
+					do {
+						Item data = new Item("data");
+						String[] resultsColumns = cursor.getColumnNames();
+						for (int i = 0; i < resultsColumns.length; i++) {
+							String key = resultsColumns[i];
+							String value = cursor.getString(cursor
+									.getColumnIndexOrThrow(resultsColumns[i]));
+							if (value != null)
+								data.setAttribute(key, value);
+						}
+						items.add(data);
+					} while (cursor.moveToNext());
+				}
+				cursor.close();
+				db.close();
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
+		return items;
+	}
+	
+	public Vector<Item> getDownloadVideos() {
+		Vector<Item> items = new Vector<Item>();
+		try {
+			if (database != null) {
+				SQLiteDatabase db = database.getWritableDatabase();
+
+				Cursor cursor = db
+						.rawQuery(
+								"SELECT * FROM TRACKS WHERE imagetype='V' AND albumid=''",
+								null);
+				if (cursor.moveToFirst()) {
+
+					do {
+						Item data = new Item("data");
+						String[] resultsColumns = cursor.getColumnNames();
+						for (int i = 0; i < resultsColumns.length; i++) {
+							String key = resultsColumns[i];
+							String value = cursor.getString(cursor
+									.getColumnIndexOrThrow(resultsColumns[i]));
+							if (value != null)
+								data.setAttribute(key, value);
+						}
+						items.add(data);
+					} while (cursor.moveToNext());
+				}
+				cursor.close();
+				db.close();
+			}
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
+		return items;
+	}
+
+	/**
+	 * removeInstalledApp - This method is called to remove any particular table
+	 * record base on 'CID'.
+	 * 
+	 * @param String
+	 */
+	public int removeTrack(String id) {
+		int i = -1;
+		try {
+			if (database != null) {
+				SQLiteDatabase db = database.getWritableDatabase();
+				String iwhereClause = "id = '" + id + "'";
+				 i = db.delete("TRACKS", iwhereClause, null);
+				if (i > 0) {
+					//Log.e("AIRTEL", "Deleted a record with ID : " + id);
+				} else {
+					//Log.e("AIRTEL", "Error while deleting a  record ");
+				
+				}
+				db.close();
+			}
+			return i;
+		} catch (Exception e) {
+			//e.printStackTrace();
+			return i;
+		}
+		
+	}
+	public int removeAlbum(String id) {
+		int i = -1;
+		try {
+			if (database != null) {
+				SQLiteDatabase db = database.getWritableDatabase();
+				String iwhereClause = "id = '" + id + "'";
+				 i = db.delete("ALBUMS", iwhereClause, null);
+				if (i > 0) {
+					//Log.e("AIRTEL", "Deleted a record with ID : " + id);
+				} else {
+					//Log.e("AIRTEL", "Error while deleting a  record ");
+				
+				}
+				db.close();
+			}
+			return i;
+		} catch (Exception e) {
+			//e.printStackTrace();
+			return i;
+		}
+		
+	}
+	
+	
+	public int getCount() {
+		int count = 0;
+		try {
+			if (database != null) {
+				SQLiteDatabase db = database.getWritableDatabase();
+				Cursor cursor = db
+						.rawQuery("select * from DOWNLOADQUEUE", null);
+				if (cursor != null) {
+					cursor.moveToFirst();
+					count = cursor.getCount();
+				}
+				db.close();
+			}
+
+		} catch (Exception e) {
+			//e.printStackTrace();
+		}
+		return count;
+	}
+
+	/**
+	 * delete - delete complete table from the database.
+	 */
+	public void deleteAllTracks() {
+
+		if (database != null) {
+			SQLiteDatabase db = database.getWritableDatabase();
+			db.delete("DOWNLOADQUEUE", null, null);
+			db.close();
+			// Log.d(TAG, "Delete hash record.");
+		}
+	}
+
+	/**
+	 * update - This method is called to update any particular table record base
+	 * on 'CID'.
+	 * 
+	 * @param String
+	 */
+	public void update(String CID) {
+
+		if (database != null) {
+			String iwhereClause = "CID=" + CID;
+
+			SQLiteDatabase db = database.getWritableDatabase();
+			ContentValues cv = new ContentValues();
+			db.update("app_detail", cv, iwhereClause, null);
+			db.close();
+		}
+	}
+
+	public void updateTrack(String ID,String pos) {
+
+		if (database != null) {
+			String iwhereClause = "id=" + ID;
+
+			SQLiteDatabase db = database.getWritableDatabase();
+			ContentValues cv = new ContentValues();
+			cv.put("position", pos);
+			db.update("TRACKS", cv,iwhereClause, null);
+			db.close();
+		}
+	}
+	
+	public void updateAlbum(String ID,String pos) {
+
+		if (database != null) {
+			String iwhereClause = "id=" + ID;
+
+			SQLiteDatabase db = database.getWritableDatabase();
+			ContentValues cv = new ContentValues();
+			cv.put("position", pos);
+			db.update("ALBUMS", cv,iwhereClause, null);
+			db.close();
+		}
+	}
+	/**
+	 * close - close the database
+	 */
+	public void close() {
+		database.close();
+	}
+	
+	public void insertDownloadedTrack(String query) {
+		try {
+			if (database != null) {
+				SQLiteDatabase db = database.getWritableDatabase();
+				db.execSQL(query);
+				db.close();
+				//Log.e("-=-=-=-=insertDownloadedTrack=-=-=-==-=-","-=-=-=-=insertDownloadedTrack=-=-=-=-=-=-");
+			}
+
+		} catch (Exception e) {
+			//Log.e("-=-=-=-=-=-=-=-==-=-","-=-=-=-=-=-=-=-=-=-=-");
+			//e.printStackTrace();
+		}
+	}
+	
+	
+
+}

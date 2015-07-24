@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/privacySettings"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/privacySettings"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_blockusers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/arrows_right_black"
+            android:drawablePadding="15dp"
+            android:drawableRight="@drawable/arrows_right_black"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:text="@string/blockusers"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_unblockusers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/arrows_right_black"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrows_right_black"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:text="@string/unblockusers"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/general"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="15dp"
+            android:text="@string/general"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp"
+            android:textStyle="bold" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/arrows_right_black"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrows_right_black"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:text="@string/RateApp"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_shareapp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/arrows_right_black"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrows_right_black"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:text="@string/shareapp"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_about"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/arrows_right_black"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/arrows_right_black"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="15dp"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:text="@string/about"
+            android:textColor="@color/dgrey"
+            android:textSize="15sp" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

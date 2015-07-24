@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categories_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/tv_validupto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|start"
+        android:padding="5dp"
+        android:textColor="@color/bs_dark_blue" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_timeleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical|start"
+        android:padding="5dp"
+        android:textColor="@color/bs_dark_blue" >
+    </TextView>        
+    
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"        
+        android:layout_below="@+id/tv_validupto"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:visibility="invisible" >
+    </TextView>
+    
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"        
+        android:layout_below="@+id/tv_from"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:textColor="@color/black" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tv_reply"
+        android:layout_below="@+id/tv_subject"
+        android:padding="5dp"
+        android:textColor="@color/black" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_attachmentName"
+        android:gravity="center_vertical|start"
+        android:padding="10dp"
+        android:text="@string/reply"
+        android:textColor="@color/bs_dark_blue"
+        android:textStyle="bold"
+        android:visibility="invisible" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_attachmentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tv_attachmentVD"
+        android:layout_toStartOf="@+id/tv_attachmentVD"
+        android:gravity="center_vertical|start"
+        android:padding="5dp"
+        android:textColor="@color/black" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_attachmentVD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center_vertical|start"
+        android:padding="5dp"
+        android:textColor="@color/bs_dark_blue"
+        android:textStyle="bold" >
+    </TextView>
+
+</RelativeLayout>

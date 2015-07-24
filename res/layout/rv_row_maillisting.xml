@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_row_lisiting_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg_bottomborder"
+    android:padding="5dp" >
+
+    <CheckBox
+        android:id="@+id/chkSelected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/template_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@+id/chkSelected"
+        android:layout_toEndOf="@+id/chkSelected"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/template_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_toEndOf="@+id/template_icon"
+        android:layout_toLeftOf="@+id/template_date"
+        android:layout_toRightOf="@+id/template_icon"
+        android:layout_toStartOf="@+id/template_date"
+        android:singleLine="true"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/template_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/template_title"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/template_icon"
+        android:layout_toLeftOf="@+id/template_date"
+        android:layout_toRightOf="@+id/template_icon"
+        android:layout_toStartOf="@+id/template_date"
+        android:textColor="@color/d_grey"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/template_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/template_attachment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/template_date"
+        android:contentDescription="@string/app_name"
+        android:padding="2dp"
+        android:src="@drawable/ic_menu_attachment" />
+
+</RelativeLayout>

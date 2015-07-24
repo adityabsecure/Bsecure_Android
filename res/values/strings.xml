@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="fsitbmia">File size is too big, max 2MB is allowed</string>
+    <string name="cwansaff">Current we are not supporting attaching file format</string>
+    
+    <string name="wyr">Write your reply</string>
+    <string name="pwyr">Please write your reply</string>
+    
+    <string name="psvd">Please select valid Date</string>
+    <string name="protections">Protections</string>
+    <string name="composemail">Compose mail</string>
+    
+    <string name="ymnlefv">Your message no longer exists for viewing</string>    
+    
+    <string name="reply">Reply</string>
+    <string name="showtime">Show Time</string>
+    <string name="readonly">Read Once</string>
+    <string name="validuntil">Valid Until</string>
+    <string name="autodelete">Auto Delete</string>
+    <string name="send">Send</string>    
+    <string name="inbox">Inbox</string>
+    <string name="sent">Sent</string>
+    <string name="outbox">Outbox</string>
+    <string name="drafts">Drafts</string>
+    <string name="trash">Trash</string>
+    <string name="logout">Logout</string>
+    <string name="filters">Filters</string>
+    
+    <string name="nonettitle">Message</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    
+    <string name="bcc">Bcc</string>
+    <string name="cc">Cc</string>
+    
+    <string name="blockusers">Block Users</string>
+    <string name="unblockusers">Unblock Users</string>
+    
+    <string name="psbdl">Pin should be 4 digit long</string>
+    
+    <string name="subject">Subject</string>
+    <string name="composeemail">Compose email</string>
+    <string name="syhrwbpltata">Successfully you have registered with Bsecure. Please login to access the app</string>
+    
+    <string name="deliverinfo">Delivery information:</string>
+    <string name="delivered">delivered</string>
+    <string name="notdelivered">not delivered</string>
+    <string name="songs">Songs</string>
+    <string name="cptc">Can\'t play this content</string>
+    <string name="logoff">Logoff</string>
+    <string name="infloop">..Infinity loop..</string>
+    <string name="atp">Add this Playlist</string>
+    <string name="yaiiomcotmio">Your app is in offline mode. Click OK to make it online</string>
+    <string name="yhsyamaopmio">You have set your app mode as offline, please make it on</string>
+    <string name="flogout">Successfully logged out of Facebook</string>
+    <string name="glogout">Successfully logged out of Google Plus</string>
+    <string name="tlogout">Successfully logged out of Twitter</string>
+    <string name="ywfiopmio">Your WiFi is off, please make it on</string>
+    <string name="ydxiopmio">Your Data Connectivity is off, please make it on</string>
+    <string name="video">Video</string>
+      
+    
+    <string name="yanliya">You are not logged into your account.</string>
+    <string name="yanrfpaplfr">You are not registered for push alerts. Please login to get registered</string>
+    <string name="patttq">Please add tracks to the queue</string>
+    <string name="nonetmsg">We could not establish an internet connection, please check your handset is correctly setup for internet</string>
+    <string name="dduration">00:00|00:00</string>
+    <string name="nttatq">No tracks to add to queue</string>
+    <string name="nttd">No tracks to download</string>
+    <string name="ntiq">No tracks in queue</string>
+    <string name="peotp">Please enter OTP</string>
+    <string name="peowuhr">Please enter OTP which you have received</string>
+    <string name="atq">Added to queue</string>
+    <string name="cdtq">Already added to queue</string>
+    <string name="player">Player</string>
+    <string name="search">Search</string>
+    <string name="subscription">subscription</string>
+    <string name="atad">All tracks are downloaded.</string>
+    <string name="plus_generic_error">Sign in with Google is not available.</string>
+    <string name="signed_in_status">Signed in as \"%s\".</string>
+    <string name="unknown_person">Unknown</string>
+    <string name="player_buffering_message">Buffering ....</string>
+    <string name="player_playback_failed_message">Error - Playback failed</string>
+    <string name="nipcyns">No Internet, Please check your network settings</string>
+    <string name="amb">wynk music</string>
+    <string name="pesk">Please enter search key</string>
+    <string name="isr">Invalid server response</string>
+    <string name="sct">Server connection timeout.!</string>
+    <string name="snr1">Server not reachable.!</string>
+    <string name="iurl">Invalid URL</string>
+    <string name="snr2">Server not reachable.!!</string>
+    <string name="snr3">Server not reachable.!!!</string>
+    <string name="select_photo">Please select your desired option</string>
+    <string name="cam">Camera</string>
+    <string name="gall">Gallery</string>
+    <string name="downloading">Download....</string>
+    <string name="app_name">Bsecure</string>
+    
+    <string name="nodrafts">No drafts</string>
+    <string name="notrash">No trash</string>
+    
+    <string name="menu_settings">Settings</string>
+    <string name="sdcardmsg1">Sorry no memory card Found</string>
+    <string name="sdcardmsg2">SDCard is wirte protected, can not save content</string>
+    <string name="loading">Loading....</string>
+    <string name="dippw">Download in progress, please wait....</string>
+    <string name="ds">Download started</string>
+    <string name="dnsUsongs">Download \u0026 Stream \n Unlimited Songs</string>
+    <string name="ymba">Your Wynk Music account</string>
+    
+    <string name="pleasewait">Please wait....</string>
+    <string name="peu">Please enter username</string>    
+    <string name="pep">Please enter password</string>
+    <string name="prep">Please re-enter password </string>
+    
+    
+    
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="address">Address</string>
+    <string name="password_agian">Password (again)</string>
+    <string name="password">Password</string>
+    <string name="mobileNo"> Mobile no.</string>
+    <string name="enterOtp">Enter OTP</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    
+    <string name="recoverpassword">Recover password</string>
+    <string name="recoverpin">Recover Pin</string>
+    
+    <string name="recover">Recover</string>
+    <string name="signin">Sign In</string>
+    
+    <string name="addpin">Add Pin</string>
+    
+    <string name="addattachments">Add attachments</string>
+    
+    <string name="addpin_caps">ADD PIN</string>
+    
+    <string name="createaccount">Create Account</string>
+    
+    <string name="createnewaccount">Create New Account</string>
+    
+    <string name="smiwpwas">Sign me in with Pin when app start</string>  
+    
+    <string name="emailaddress">Email Address</string>
+    
+    <string name="ep">ENTER PIN</string>
+    <string name="pin">Pin</string>
+    
+    <string name="or">Or</string>
+    
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="forgotPin">Forgot Pin</string>
+    <string name="generatePin">Generate Pin</string>
+    
+    <string name="icama">I cannot access my account</string>
+    
+    <string name="peyfn">Please enter your first name</string>
+    <string name="peyln">Please enter your last name</string>
+    
+    <string name="pepin">Please enter pin</string>
+    <string name="peavpin">Please enter a valid pin</string>
+    
+    <string name="peei">Please enter Email Id</string>
+    
+    <string name="peavei">Please enter a valid Email Id</string>
+    
+    <string name="psmbc">Password strength must be 8&#8211;16 characters</string>
+    
+    
+    <string name="peavccEi">Please enter a valid Cc Email Id</string>
+    <string name="peavbccEi">Please enter a valid Bcc Email Id</string>
+    
+    <string name="emc">Enter Minimum 8 characters</string>
+    
+    <string name="pePswd">Please enter password</string>
+    <string name="pecPswd">Please enter confirm password</string>
+    <string name="peavPswd">Please enter a valid password</string>
+    
+    <string name="pes">Please enter subject</string>
+    
+    <string name="eiaceidrnc_old">Email ID and confirm Email ID is not correct</string>
+    <string name="eiaceidrnc">Email ID didn\'t match</string>
+    
+    <string name="cpmm">Confirm password must match</string>
+    
+    
+    <string name="pecn">Please enter city name</string>
+    
+    <string name="peOtpNo">Please enter OTP no.</string>
+    <string name="peMsisdn">Please enter mobile number</string>
+    <string name="peavmn">Please enter a valid mobile number</string>
+    <string name="goOffline">Go Offline</string>
+    <string name="soc">Stream over WiFi</string>
+    <string name="doc">Download over WiFi</string>
+    <string name="playquality">Play Quality</string>
+    <string name="low">Low</string>
+    <string name="high">High</string>
+    <string name="privacySettings">Privacy settings</string>
+    <string name="pushNot">Push notification</string>
+    
+    
+    
+    <string name="socail">Social</string>
+    <string name="general">General</string>
+    <string name="RateApp">Rate app</string>
+    <string name="shareapp">Share app</string>
+    <string name="about">About</string>
+    <string name="whatsnew">whats new</string>
+    <string name="quickhints">quick hints</string>
+    <string name="privacypolicy">privacy policy</string>
+    <string name="tnc">Terms \u0026 conditions</string>
+    <string name="name">Thomas</string>
+    <string name="subscribeNow">Subscribe Now</string>
+    <string name="subscribeNowTxt">Subscribing ends your Trial</string>
+    <string name="peostymnpvtpwbynp">Please enter OTP sent to your mobile number. Post validating, this pin will be your new password. You can reset in My Profile page.</string>
+    <string name="pwd_sent_msg">We have sent the password to your registered mobile number</string>
+    <string name="mob_ret_failed">We could not retrive the mobile number. Please help us identy you.</string>
+    <string name="one_tm_pwd">Just one more step. We have sent you a message with a one time password. Please enter it to finish the registration process</string>
+    <string name="enter_mob">Please enter your mobile number.The password will be sent to you as a text message</string>
+    <string name="reg_msg">To listen to the full song or to download the song you need to register. Click on Cancel to go the registration page or OK to go to Home screen.</string>
+    <string name="subscribe">To listen to the full song or to download the song you need to subscribe.Please click on the Subscribe to choose your pack.</string>
+    <string name="already_added_playlist">This song is already added to this playlist,choose another playlist</string>
+    <string name="mobile_no">Mobile number</string>
+    <string name="fname">First Name</string>
+    <string name="lname">Last Name</string>
+    <string name="uname">Email ID</string>
+    <string name="ceid">Confirm Email ID</string>
+    
+    <string name="pwd"> New Password</string>
+    <string name="old_pwd"> Old Password</string>
+    <string name="sh_alb">Share Album</string>
+    <string name="myply">My Playlist</string>
+    <string name="cplan_txt">Your current plan</string>
+    <string name="billing_txt">You have 7 days left in this current billing cycle</string>
+    <string name="dummyValue">Rs.1.99/month</string>
+    <string name="name_plylst">Name your playlist</string>
+    <string name="dwl">Download</string>
+    <string name="dummy_txt">The name of the actual song displayed</string>
+    <string name="crt_newply">create new playist</string>
+    <string name="saved_playlist">OR add to saved playlist</string>
+    <string name="playlst1">Playlist-1</string>
+    <string name="playlst2">Playlist-2</string>
+    <string name="submit">Submit</string>
+    <string name="ok">OK</string>
+    <string name="unsubs_txt">Unsubscribe</string>
+    <string name="subs_txt">Subscribe</string>
+    <string name="chngpln">Change plan</string>
+    <string name="subs_confrm">Your airtel wynk music subscription will renew automatically through airtel account. You can unsubcribe anytime from MyProfile.</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="follow_btn">Follow</string>
+    <string name="email">email</string>
+    <string name="nocontent">No mails</string>
+    
+    <string name="clr">Clear</string>
+    <string name="done">Done</string>
+    <string name="save">Save</string>
+    <string name="pick_contact">Select Contact</string>
+    <string name="pinnumber">Pin number</string>
+    <string name="update">Update</string>
+    <string name="ufptl">Update failed, Please try later</string>
+    <string name="aeoptal">An error occurred, please try again later</string>
+    <string name="img_cancel">You have cancelled image capturing</string>
+    <string name="img_failed">Sorry! Failed to capture image</string>
+    <string name="frnd_mob">Enter your friend mobile no</string>
+    <string name="music_rec">Music Recommendations</string>
+    <string name="hide_activities">Hide all social activities until next login</string>
+    <string name="pvt_session">Private Session</string>
+    <string name="img_success">Image uploaded successfully</string>
+    <string name="reject">Reject</string>
+    <string name="accept">Accept</string>
+    <string name="preq"><u>Pending Request</u></string>
+    <string name="validchar">(A to Z, @,.,_,-.)</string>
+    
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string-array name="menuArray">
+        <item>@string/inbox</item>
+        <item>@string/sent</item>        
+        <item>@string/drafts</item>
+        <item>@string/trash</item>        
+        <item>@string/settings</item>
+        <item>@string/logout</item>        
+    </string-array>
+    
+    <string-array name="menuicons">
+        <item>@drawable/ic_drawer_unread_24dp</item>
+        <item>@drawable/ic_drawer_sent_24dp</item>        
+        <item>@drawable/perm_group_user_dictionary</item>
+        <item>@drawable/ic_drawer_trash_24dp</item>
+        <item>@drawable/ic_drawer_settings_24dp</item>
+        <item>@drawable/ic_close_24dp</item>        
+    </string-array>        
+
+    <string name="explore">Explore</string>
+    <string name="radio">Radio</string>
+    <string name="chart">Chart</string>
+    <string name="mylibrary">My Library</string>
+    <string name="myprofile">My Profile</string>
+    <string name="settings">Settings</string>
+    <string name="chnglng">Language</string>
+    <string name="pwvu">Please wait validating user</string>
+    <string name="pwait">Please wait....</string>
+    <string name="select_playlist">Please select a playlist</string>
+    <string name="fbapp_error">Facebook is not installed on your device</string>
+    <string name="whatsapp_error">Whatsapp is not installed on your device</string>
+    <string name="home">Home</string>
+    <string name="close">Exit</string>
+    <string name="tc">Terms &amp; Condition</string>
+    <string name="tofuse">Terms of Use</string>
+    <string name="pvtpol">Privacy Policy</string>
+    <string name="qhints">Quick Hints</string>
+    <string name="icepctwi">Internet Connection Error, Please connect to working Internet connection</string>
+    <string name="fmamb">Fantastic music on airtel wynk</string>
+    <string name="pemn">Please enter mobile no</string>
+    <string name="pevmn">Please enter a valid mobile no</string>
+    <string name="himlto">Hi, I am listening to my favourite music on airtel wynk. Please check it out at http://africa.wynkmusic.com/social/default.aspx</string>
+    <string name="ss">Send successful</string>
+    <string name="sfgf">Send failed, generic failure</string>
+    <string name="sfns">Send failed, no service</string>
+    <string name="sfnp">Send failed, null pdu</string>
+    <string name="sfrf">Send failed, radio is off</string>
+    <string name="fls">Facebook login successful</string>
+    <string name="tls">Twitter login successful</string>
+    <string name="gls">G+ login successful</string>
+    <string name="ywbc">You will be charged </string>
+    <string name="fr">For</string>
+    <string name="ijl">I just listened to the</string>
+    <string name="coat">Check it out at http://africa.wynkmusic.com/social/default.aspx?id=</string>
+    <string name="citoat">Check it out at http://africa.wynkmusic.com/social/default.aspx?id=app_track_</string>
+    <string name="citoatfs">Check it out at http://africa.wynkmusic.com/social/default.aspx?id=app_FS_</string>
+    <string name="tdamb">To download airtel wynk music app, please click here http://africa.wynkmusic.com/social/default.aspx</string>
+    <string name="hey">Hey,</string>
+    <string name="nos">No of Songs: </string>
+    <string name="time">Time :</string>
+    <string name="size">Size :</string>
+    <string name="pdnsmt">Phone does not support MIME Type :</string>
+    <string name="ewpptl">Error while processing, please try later</string>
+    <string name="dwl_ing">Downloading...</string>
+    <string name="minlft"> mins left</string>
+    <string name="seclft"> sec left</string>
+    <string name="yris">Your ringtone is set</string>
+    <string name="shply">Share Playlist</string>
+    <string name="shsng">Share Song</string>
+    <string name="price">Price</string>
+    <string name="yh">You have </string>
+    <string name="dlitcbc"> days left in this current billing cycle</string>
+    <string name="by">By</string>
+    <string name="prinfnl">Person information is null</string>
+    <string name="ftdt">Failed to download the Track:</string>
+    <string name="ptl">please try later</string>
+    <string name="amp">Wynk Music is playing</string>
+    <string name="fnf">File not found</string>
+    <string name="cerr">Connection Error</string>
+    <string name="yhcdr">You have cancelled download request.</string>
+    <string name="isres">Invalid server response :</string>
+    <string name="edcpda">Error, while downloading the content. Please download again</string>
+    <string name="ftu">Failed to upload.!!!</string>
+    <string name="yhctr">You have cancelled the request</string>
+    <string name="dyago"> days ago</string>
+    <string name="tdy">Today</string>
+    <string name="sel_lang">Select Language</string>
+    <string name="cont">Continue</string>
+    <string name="chngsetsmsg">You can change this settings anytime from Settings > Language</string>
+    <string name="charge_cfrm">Messaging would like to send a message to</string>
+    <string name="charge_msg">This may cause charges on your mobile account.Do you want to proceed?</string>
+    <string name="frname">Français</string>
+    <string name="enname">English</string>
+    <string name="follow">Follow</string>
+    <string name="invite">Invite</string>
+    <string name="dwlsuccess">Downloaded successfully</string>
+    <string name="track">Track</string>
+    <string name="preview">Preview</string>
+    <string name="status_success">Status updated successfully</string>
+    <string name="status_error">Error while updating the status, please try after sometime</string>
+    <string name="uttwt">Updating to twitter...</string>
+    <string name="hrago"> hour ago</string>
+    <string name="minago"> minutes ago</string>
+    <string name="secsago"> seconds ago</string>
+    <string name="title"> Wynk Music Share</string>
+    <string name="listsng"> Listening to song </string>
+    <string name="atwnk"> at Wynk Music</string>
+    <string name="listalb"> Listening to album </string>
+    <string name="listply"> Listening to playlist </string>
+    <string name="reqcancel">You have cancelled the request</string>
+   
+   
+   <string name="remove">Remove</string>
+   <string name="music"> Music </string>
+   <string name="musicSearch"> Music Search</string>
+   <string name="speakNow"> Speak Now </string>
+   <string name="clickrecord">Press the Mic button to start </string>
+   <string name="recording">Recording...</string>
+   <string name="recordend">Recording completed</string>
+   <string name="volume">Volume:</string>
+   <string name="days">days</string>  
+   
+   <string-array name="countries_array">
+        <item>Afghanistan</item>
+        <item>Benin</item>
+        <item>Botswana</item>
+        <item>Cameroon</item>
+        <item>Congo</item>
+        <item>CoteD\'ivoire</item>
+        <item>Cyprus</item>
+        <item>Ghana</item>
+        <item>Guinnea Bissau</item>
+        <item>Guinnea Conakry</item>
+        <item>Iran</item>
+        <item>Liberia</item>
+        <item>Nigeria</item>
+        <item>Rwanda</item>
+        <item>South Africa</item>
+        <item>Sudan</item>
+        <item>Swaziland</item>
+        <item>Syria</item>
+        <item>Uganda</item>
+        <item>Yemen</item>
+        <item>Zambia</item>
+    </string-array>
+    
+   
+      
+</resources>

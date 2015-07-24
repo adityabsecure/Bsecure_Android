@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/categories_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/catgr_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"        
+        android:layout_marginBottom="5dp" >
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent" />
+
+        <ProgressBar
+            android:id="@+id/catgr_pbar"
+            style="@android:attr/progressBarStyleSmallInverse"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:indeterminate="true" >
+        </ProgressBar>
+
+        <TextView
+            android:id="@+id/catgr_txt"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/nocontent"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:visibility="gone" >
+        </TextView>
+        
+        <ImageButton
+            android:id="@+id/add_button"
+            android:layout_width="@dimen/round_button_diameter"
+            android:layout_height="@dimen/round_button_diameter"
+            android:layout_gravity="end|bottom"
+            android:tint="@android:color/white"
+			
+            android:layout_marginBottom="@dimen/add_button_margin"
+            android:layout_marginEnd="@dimen/add_button_margin"
+            android:layout_marginRight="@dimen/add_button_margin"
+            android:src="@drawable/pen_icon"/>
+        
+    </FrameLayout>
+
+</RelativeLayout>
